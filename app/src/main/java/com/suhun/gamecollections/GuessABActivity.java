@@ -25,10 +25,23 @@ public class GuessABActivity extends AppCompatActivity {
                 finish();
             }
         });
+        binding.guess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                guessAB.checkAnswerResult(binding, getResources(), GuessABActivity.this);
+            }
+        });
+
+        binding.restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                guessAB.showResetAlertDialog(GuessABActivity.this, getResources(), binding);
+            }
+        });
         binding.setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guessAB.showSettingAlertdialog(GuessABActivity.this);
+                guessAB.showSettingAlertdialog(GuessABActivity.this, getResources(), binding);
             }
         });
     }
