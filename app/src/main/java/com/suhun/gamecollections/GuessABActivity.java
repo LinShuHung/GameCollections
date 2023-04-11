@@ -4,16 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.suhun.gamecollections.databinding.ActivityMainBinding;
+import com.suhun.gamecollections.databinding.ActivityGuessAbactivityBinding;
 
-public class MainActivity extends AppCompatActivity {
-    private ActivityMainBinding binding;
+public class GuessABActivity extends AppCompatActivity {
+    private ActivityGuessAbactivityBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityGuessAbactivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
     }
-
 }
