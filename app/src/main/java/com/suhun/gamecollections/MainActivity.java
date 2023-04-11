@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.suhun.gamecollections.databinding.ActivityMainBinding;
+import com.suhun.gamecollections.game_object.GuessAB;
 
 public class MainActivity extends AppCompatActivity {
     String tag = MainActivity.class.getSimpleName();
